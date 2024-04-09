@@ -11,6 +11,13 @@ body {
   padding: 0;
 }
 
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/* NAVBAR */
+
 nav {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -19,5 +26,20 @@ nav {
 }
 
 #nav-links {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#nav-button {
+  background-color: #A6FF00;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: 700;
 }
