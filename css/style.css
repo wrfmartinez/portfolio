@@ -26,6 +26,9 @@ nav {
   background-color: #FFFFFF;
   height: 80px;
   padding: 0 120px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .nav-btn {
@@ -88,11 +91,70 @@ nav {
   border-radius: 5px;
 }
 
+@media (min-width: 900px) {
+  #nav-links-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    grid-template-columns: repeat(2, auto);
+    padding: 0 30px;
+  }
+
+  #nav-links-mobile img {
+    width: 40px;
+  }
+
+  #nav-links-mobile button {
+    background-color: transparent;
+    border: none;
+  }
+
+  #nav-links-mobile button:hover {
+    cursor: pointer;
+  }
+
+  #nav-links-mobile {
+    justify-self: end;
+  }
+
+  #nav-links, .nav-btn {
+    display: none;
+  }
+}
+
 /* HERO */
 #hero {
   display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40rem;
 }
 
 h1 {
   font-size: 4.5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+#hero-links button {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+#hero-links button:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid transparent;
 }
