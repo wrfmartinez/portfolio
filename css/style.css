@@ -335,10 +335,16 @@ p {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
   padding: 0 120px;
+}
+
+@media (max-width: 1200px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 750px) {
@@ -347,7 +353,15 @@ p {
   }
 
   .projects-container {
-    padding: unset;
+    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+    padding: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* Change to 1 column */
+    padding: 20px;
   }
 }
 
