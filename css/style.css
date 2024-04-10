@@ -267,23 +267,34 @@ p {
 
 .about-me-img-container {
   display: flex;
+  padding: 100px 0;
   justify-content: center;
-  padding: 200px;
+  align-items: center;
   background-color: var(--secondary-color);
 }
 
 .about-me-img {
-  padding: 150px;
+  width: 250px;
+  height: 250px;
   background-color: var(--primary-color);
 }
 
 @media (max-width: 900px) {
+#about-me {
+  height: 700px;
+}
+
   .about-me-description {
     padding: 0 50px;
   }
 
   .about-me-img-container {
-    padding: 100px 0;
+    padding: 30px 0;
+    background-color: transparent;
+  }
+
+  .about-me-img {
+    background-color: var(--secondary-color);
   }
 }
 
@@ -296,7 +307,38 @@ p {
   }
 
   .about-me-img {
-    padding: 100px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
   }
+}
+
+/* CTA */
+#cta {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  text-align: center;
+}
+
+#cta p {
+  text-align: center;
+  justify-self: center;
+}
+
+form {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  justify-content: center;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 15px;
+}
+
+form #submit {
+  background-color: var(--secondary-color);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
 }
