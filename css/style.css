@@ -431,9 +431,8 @@ footer {
 }
 
 footer #logo {
-  justify-self: end;
-  margin-right: auto;
-  padding-left: 120px;
+  justify-self: flex-start;
+  padding-left: 70px;
 }
 
 footer ul {
@@ -456,9 +455,8 @@ footer ul {
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 @media (max-width: 900px) {
