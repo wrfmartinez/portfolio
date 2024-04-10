@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 /* NAVBAR */
 
 nav {
@@ -183,7 +187,6 @@ p {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(7, auto);
-  list-style: none;
   gap: 80px;
   padding: 20px 0 0 0;
 }
@@ -338,6 +341,16 @@ p {
   padding: 0 120px;
 }
 
+@media (max-width: 750px) {
+  #projects {
+    margin-top: 160px;
+  }
+
+  .projects-container {
+    padding: unset;
+  }
+}
+
 .project-container {
   background-color: #FFFFFF;
 }
@@ -394,4 +407,61 @@ form #submit {
   color: #FFFFFF;
   border: none;
   border-radius: 3px;
+}
+
+/* FOOTER */
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+}
+
+footer #logo {
+  justify-self: end;
+  margin-right: auto;
+  padding-left: 120px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+.footer-links {
+  text-align: center;
+  font-size: 13.5px;
+}
+
+.footer-links li {
+  padding: 10px 0;
+}
+
+.footer-titles {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+@media (max-width: 900px) {
+  footer {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  footer #logo, footer ul {
+    justify-self: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  footer #logo {
+    padding-bottom: 30px;
+  }
 }
