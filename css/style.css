@@ -284,6 +284,8 @@ p {
   width: 250px;
   height: 250px;
   background-color: var(--primary-color);
+  background: url(https://avatars.githubusercontent.com/u/109120202?v=4);
+  background-size: contain;
 }
 
 @media (max-width: 900px) {
