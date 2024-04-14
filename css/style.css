@@ -439,7 +439,8 @@ footer {
 
 footer #logo {
   justify-self: flex-start;
-  padding-left: 70px;
+  padding-left: 120px;
+  margin-bottom: 50px;
 }
 
 footer ul {
