@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  --primary-color: #E6E6E6;
-  --secondary-color: #1D1D1F;
-  --tertiary-color: #A6FF00;
-  background-color: #E6E6E6;
+  --primary-color: #ffffff;
+  --secondary-color: #9456ff;
+  --tertiary-color: #1688ec;
+  background-color: #ffffff;
   font-family: "Nunito Sans", Helvetica, sans-serif;
   font-size: 14px;
   min-height: 100dvh;
@@ -31,7 +35,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, auto);
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   height: 80px;
   padding: 0 120px;
   position: sticky;
@@ -64,39 +68,38 @@ nav {
 #nav-links button:hover {
   cursor: pointer;
   transition: 0.8s;
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
   color: var(--primary-color);
   border: none;
 }
 
 #nav-button {
   font-size: 15px;
+  color: var(--primary-color);
   background-color: var(--tertiary-color);
   border: none;
   border-radius: 18px;
   padding: 9px 20px;
+  transition: 0.2s;
 }
 
 #nav-button:hover {
   cursor: pointer;
-  background-color: #9bee01;
+  background-color: #0f64af;
 }
 
 #logo {
-  font-size: 26px;
+  font-size: 20px;
+  border: 3px solid #1688ec;
+  width: 65px;
   font-weight: 700;
 }
 
 #logo a {
+  color: #1688ec;
   border: 1px solid transparent;
   border-radius: 5px;
   padding: 5px;
-}
-
-#logo a:hover {
-  transition: 0.8s;
-  border: 1px solid #1d1d1f36;
-  border-radius: 5px;
 }
 
 @media (min-width: 900px) {
@@ -135,11 +138,15 @@ nav {
 
 /* HERO */
 #hero {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   height: 100dvh;
+}
+
+#hero img {
+  align-self: flex-end;
+  width: 600px;
 }
 
 h1 {
@@ -161,8 +168,8 @@ p {
 #hero-links button {
   background-color: transparent;
   border: 1px solid var(--secondary-color);
-  padding: 5px 10px;
-  border-radius: 15px;
+  padding: 12px 30px;
+  border-radius: 30px;
 }
 
 #hero-links button:hover {
