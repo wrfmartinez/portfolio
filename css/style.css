@@ -141,20 +141,18 @@ nav {
 #hero {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
   height: 100%;
   margin: 0 180px;
 }
 
 #hero img {
-  align-self: flex-end;
-  width: 600px;
+  width: 500px;
 }
 
 #hero-description {
   width: 500px;
-  margin-right: 120px;
 }
 
 h1 {
@@ -221,7 +219,7 @@ p {
   padding: 20px 0 0 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   #tech-stack-info ul {
     grid-template-columns: repeat(4, auto);
   }
@@ -237,6 +235,10 @@ p {
 
   #hero-description {
     margin-right: 0;
+  }
+
+  #hero img {
+    margin-top: 50px;
   }
 }
 
