@@ -5,8 +5,8 @@
   --primary: #1C1D21;
   --secondary: #31353D;
   --tertiary: #6987b6;
-  --quaternary: #92CDCF;
-  --quaternary-bright: #b4e3e4;
+  --quaternary: #28ab84;
+  --quaternary-bright: #15c996;
   --quinary: #EEEFF7;
   --font-size: 1.3rem;
   --mono: Inconsolata, monospace;
@@ -71,10 +71,68 @@ a:hover {
 #contact {
   display: flex;
   justify-content: center;
-  background-color: var(--tertiary);
+  background-color: var(--secondary);
   padding: 4rem 0;
 }
 .contact-container {
   width: 50%;
   text-align: center;
+}
+
+/* NAVBAR */
+nav {
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 1rem;
+}
+nav h1 a {
+  font-family: var(--sans);
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--tertiary)
+}
+nav a {
+  color: var(--quinary);
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  color: var(--quaternary);
+}
+span.fa-bars-staggered {
+  font-size: unset;
+}
+.cta-btn {
+  background-color: var(--quaternary);
+  padding: 6px;
+  border-radius: 2px;
+}
+.cta-btn:hover {
+  color: var(--quinary);
+  background-color: var(--quaternary-bright);
+}
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: unset;
+    margin-right: auto;
+  }
 }
