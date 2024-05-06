@@ -5,8 +5,8 @@
   --primary: #1C1D21;
   --secondary: #31353D;
   --tertiary: #6987b6;
-  --quaternary: #28ab84;
-  --quaternary-bright: #15c996;
+  --quaternary: #2897ab;
+  --quaternary-bright: #15c0c9;
   --quinary: #EEEFF7;
   --font-size: 1.3rem;
   --mono: Inconsolata, monospace;
@@ -44,6 +44,9 @@ a:hover {
 }
 
 /* background color divs */
+.section-blue {
+  background-color: var(--tertiary);
+}
 .section-gray {
   background-color: var(--secondary);
 }
@@ -158,8 +161,10 @@ span.fa-bars-staggered {
 
 /* PROJECTS */
 
-#projects {
-  padding: 4rem 1rem;
+#projects, #about {
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 #projects h2 {
   font-size: 2.5rem;
@@ -183,7 +188,7 @@ span.fa-bars-staggered {
   font-size: 1.2rem;
   line-height: 1.5;
 }
-#projects ul {
+#projects ul, #about ul {
   list-style: none;
   padding: 0;
   margin: 0 0 1rem 0;
@@ -194,7 +199,7 @@ span.fa-bars-staggered {
   gap: 1rem;
   font-size: 1rem;
 }
-#projects img {
+#projects img, #about img {
   width: 100%;
   margin: 1rem 0 4rem 0;
   border-left: 1px solid var(--quinary);
@@ -207,13 +212,17 @@ span.fa-bars-staggered {
   width: 24px;
   height: 18px;
 }
+#about h1 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
 @media (min-width: 650px) {
   article {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 1rem;
   }
-  #projects img {
+  #projects img, #about img {
     grid-column: 1/6;
     grid-row: 1/2;
   }
@@ -233,7 +242,7 @@ span.fa-bars-staggered {
   #projects .reverse-text {
     justify-content: flex-start;
   }
-  #projects ul {
+  #projects ul, #about ul {
     justify-content: flex-end;
   }
 }
