@@ -12,7 +12,10 @@ const aboutData = {
         'GitHub',
         'Responsive Web Design',
         'DevOps',
-        'Chrome DevTools'
+        'Chrome DevTools',
+        'Data Structures',
+        'Algorithms',
+        'Design Patterns',
     ],
 }
 
