@@ -1,4 +1,4 @@
-function Main() {
+function Header() {
     return (
     <>
       <h1>William Martinez</h1>
@@ -6,4 +6,4 @@ function Main() {
     )
 }
 
-export default Main
+export default Header
