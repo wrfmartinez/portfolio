@@ -1,7 +1,9 @@
 function Header() {
     return (
     <>
-      <h1>William Martinez</h1>
+      <header id="hero">
+        <h1>William Martinez</h1>
+      </header>
     </>
     )
 }

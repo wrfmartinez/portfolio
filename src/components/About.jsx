@@ -7,11 +7,13 @@ function About() {
 
     return(
     <>
-      <h2 className="about__title">About</h2>
-      <p className="about__desc">{ aboutData.desc }</p>
-      <ul className="skill__list">
-        { listOfSkills }
-      </ul>
+      <section id="about">
+        <h2 className="about__title">About</h2>
+        <p className="about__desc">{ aboutData.desc }</p>
+        <ul className="skill__list">
+          { listOfSkills }
+        </ul>
+      </section>
     </>   
     )
 }
