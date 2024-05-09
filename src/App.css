@@ -38,6 +38,43 @@ a:hover {
   border-color: #ffffffb7;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes swipeUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-800px);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 4s ease-in-out;
+}
+
+.swipeUp {
+  animation: swipeUp 1s linear;
+}
+
+.aura {
+  margin-top: 50px;
+  height: 100vh;
+  overflow: hidden;
+  transition: display 0.2s linear;
+}
+
+.hidden {
+  display: none;
+}
+
 /* NAV */
 
 nav {
