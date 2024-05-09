@@ -3,11 +3,9 @@ import aboutData from "../data/about/aboutData"
 function About() {
   const listOfSkills = aboutData.skills.map((skill, idx) => {
     if (skill.frontend) {
-      return <div>
-        <li className="about__skill-item" key={idx}>
+      return <li className="about__skill-item" key={idx}>
           { skill.toolName } <span className="about__skill-tag">#frontend</span>
         </li>
-      </div>
     } else if (skill.backend) {
       return <li className="about__skill-item" key={idx}>
         { skill.toolName } <span className="about__skill-tag">#backend</span>
@@ -25,7 +23,9 @@ function About() {
       <h2 className="about__title">About</h2>
       <p className="about__desc">{ aboutData.desc }</p>
       <h3>Tools I've Worked With</h3>
-      { listOfSkills }
+      <ul className="about__skill-list">
+        { listOfSkills }
+      </ul>
     </section>
   </>   
   )

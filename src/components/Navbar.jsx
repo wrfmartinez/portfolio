@@ -2,7 +2,7 @@ function Navbar() {
     return (
     <>
       <nav className="navbar">
-        <a href='../App.jsx'>W/M</a>
+        <a className="nav__logo" href='../App.jsx'>W/M</a>
         <ul className="nav__list">
           <li className="nav__item">
             <a href='#about'>About Me</a>
