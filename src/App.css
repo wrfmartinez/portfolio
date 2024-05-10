@@ -19,7 +19,7 @@ body {
 }
 
 .preventScroll {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 #root {
@@ -104,6 +104,11 @@ nav {
   gap: 20px
 }
 
+.nav__menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
 .btn {
   background-color: #bbe041;
   color: #1C1C1C;
@@ -117,14 +122,14 @@ nav {
 /* HERO */
 
 #hero {
-  padding: 150px 0 50px 0;
+  padding: 150px 100px 50px 100px;
   height: 100vh;
   display: flex;
   justify-content: end;
   flex-direction: column;
 }
 
-@keyframes pulse {
+@keyframes float {
   0% {
     transform: skew(0deg) scale(1.01);
   }
@@ -145,8 +150,8 @@ nav {
   }
 }
 
-.pulse {
-  animation: pulse 6s infinite linear;
+.float {
+  animation: float 6s infinite linear;
   filter: blur(2rem) hue-rotate(320deg);
 }
 
@@ -181,18 +186,38 @@ nav {
   color: #baec17;
 }
 
-@media (max-width: 1200px) {
-  #hero {
-    padding: 0;
+@media (max-width: 1100px) {
+  .nav__list {
+    position: absolute;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 40px;
+    background-color: #22272c;
+    height: 38vh;
+    width: 100%;
+    top: 80.5px;
+    right: 0px;
+    border-radius: 30px;
+  }
+
+  .nav__menu-btn {
+    display: block;
+  }
+
+  #hero {
+    padding: 0 12px;
     text-align: center;
-    margin-top: 50px;
+    justify-content: start;
+    flex-wrap: wrap;
     gap: 10px;
   }
 
+  .hero-img {
+    width: 300px;
+  }
+
   #hero h1 {
-    font-size: 7rem;
+    display: none;
   }
 
   #hero h2 {

@@ -15,28 +15,28 @@ function App() {
   useEffect(() => {
     // Trigger the animation after a short delays
     const timeout = setTimeout(() => {
-      setIsVisible(true);
+      setIsVisible(true)
     }, 100)
 
     const timeout2 = setTimeout(() => {
-      setSwipeUp(true);
+      setSwipeUp(true)
     }, 3000)
 
     const timeout3 = setTimeout(() => {
-      setHidden(true);
+      setHidden(true)
     }, 4000)
 
     const timeout4 = setTimeout(() => {
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 0)
     }, 100);
 
     return () => {
-      clearTimeout(timeout);
-      clearTimeout(timeout2);
-      clearTimeout(timeout3);
+      clearTimeout(timeout)
+      clearTimeout(timeout2)
+      clearTimeout(timeout3)
       clearTimeout(timeout4)
     }
-  }, []);
+  }, [])
 
   return (
   <>
