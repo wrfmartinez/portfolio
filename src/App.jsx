@@ -40,7 +40,7 @@ function App() {
 
   return (
   <>
-    <img className={`aura ${isVisible ? 'fadeIn' : ''} ${isSwipeUp ? 'swipeUp' : ''} ${isHidden ? 'hidden' : ''}`} src='../public/static/images/aura.svg' alt='an aura blob' />
+    <img className={`aura ${isVisible ? 'fadeIn' : ''} ${isSwipeUp ? 'swipeUp' : ''} ${isHidden ? 'hidden' : ''}`} src='/static/images/aura.svg' alt='an aura blob' />
     <Navbar></Navbar>
     <Header></Header>
     <About></About>
