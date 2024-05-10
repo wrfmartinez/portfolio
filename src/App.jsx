@@ -5,7 +5,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 function App() {
   const [isVisible, setIsVisible] = useState(false)
@@ -13,7 +13,7 @@ function App() {
   const [isHidden, setHidden] = useState(false)
 
   useEffect(() => {
-    // Trigger the animation after a short delay
+    // Trigger the animation after a short delays
     const timeout = setTimeout(() => {
       setIsVisible(true);
     }, 100)

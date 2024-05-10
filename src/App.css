@@ -16,7 +16,10 @@ body {
   background-color: var(--color-primary);
   color: var(--color-on-text);
   font-family: var(--font-main);
-  padding: 0 100px;
+}
+
+.preventScroll {
+  overflow-y: hidden;
 }
 
 #root {
@@ -67,7 +70,6 @@ a:hover {
 .aura {
   margin-top: 50px;
   height: 100vh;
-  overflow: hidden;
   transition: display 0.2s linear;
 }
 
@@ -115,11 +117,45 @@ nav {
 /* HERO */
 
 #hero {
-  padding: 150px 0 20px 0;
+  padding: 150px 0 50px 0;
   height: 100vh;
   display: flex;
   justify-content: end;
   flex-direction: column;
+}
+
+@keyframes pulse {
+  0% {
+    transform: skew(0deg) scale(1.01);
+  }
+  20% {
+    transform: skew(4deg) scale(1.0);
+  }
+  40% {
+    transform: skew(8deg) scale(1.0);
+  }
+  60% {
+    transform: skew(4deg) scale(1.01);
+  }
+  80% {
+    transform: skew(2deg) scale(1.0);
+  }
+  100% {
+    transform: skew(0deg) scale(1.01);
+  }
+}
+
+.pulse {
+  animation: pulse 6s infinite linear;
+  filter: blur(2rem) hue-rotate(320deg);
+}
+
+.hero-img {
+  position: relative;
+  top: 200px;
+  z-index: -1;
+  align-self: end;
+  width: 500px;
 }
 
 #hero h1 {
@@ -127,16 +163,47 @@ nav {
 }
 
 #hero h2 {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 #hero p {
   font-size: 5rem;
   font-weight: bold;
-  align-self: end;
+  text-decoration: underline;
 }
 
 #hero span {
-  display: block;
-  margin-left: 138px;
+  align-self: end;
+}
+
+#hero span.dot {
+  display: inline-flex;
+  color: #baec17;
+}
+
+@media (max-width: 1200px) {
+  #hero {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    gap: 10px;
+  }
+
+  #hero h1 {
+    font-size: 7rem;
+  }
+
+  #hero h2 {
+    font-size: 3rem;
+  }
+
+  #hero p {
+    align-self: center;
+  }
+
+  #hero span {
+    margin: 0;
+  }
 }
