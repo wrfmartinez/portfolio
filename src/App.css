@@ -325,3 +325,13 @@ nav {
 .project__img {
   margin-top: 30px;
 }
+
+/* CONTACT */
+#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 150px;
+}
