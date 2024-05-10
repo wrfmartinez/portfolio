@@ -327,6 +327,7 @@ nav {
 }
 
 /* CONTACT */
+
 #contact {
   width: 100%;
   display: flex;
@@ -334,4 +335,25 @@ nav {
   align-items: center;
   gap: 20px;
   padding-bottom: 150px;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: end;
+  padding: 30px 100px;
+}
+
+.footer__logo {
+  justify-self: self-start;
+}
+
+.footer__link-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding: 0;
 }
