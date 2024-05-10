@@ -5,6 +5,7 @@ function Projects() {
       <li className="project__item" key={idx}>
         <h3 className='project__name'>{project.name}</h3>
         <p className='project__desc'>{project.desc}</p>
+        <p className='project__img'>preview image/video goes here</p>
       </li>
     )
 

@@ -296,3 +296,32 @@ nav {
     justify-content: center;
   }
 }
+
+/* PROJECTS */
+#projects {
+  padding: 150px 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projects__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  list-style: none;
+  padding: 0;
+}
+
+.project__item {
+  background-color: #22272c;
+  border: 1px solid #22272c;
+  border-radius: 10px;
+  height: 400px;
+  padding: 20px 20px;
+}
+
+.project__img {
+  margin-top: 30px;
+}
