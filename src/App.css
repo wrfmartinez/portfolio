@@ -254,8 +254,8 @@ nav {
 
 .about__desc {
   font-size: 24px;
-  width: 700px;
   margin: 20px 0 40px 0;
+  text-wrap: wrap;
 }
 
 #about h3 {
@@ -284,4 +284,15 @@ nav {
 .about__skill-tag {
   font-size: 12px;
   color: #5e6b779c;
+}
+
+@media (max-width: 1100px) {
+  #about {
+    text-align: center;
+    padding: 150px 40px;
+  }
+
+  .about__skill-list {
+    justify-content: center;
+  }
 }
