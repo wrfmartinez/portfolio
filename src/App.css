@@ -343,7 +343,9 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: end;
+  align-items: center;
   padding: 30px 100px;
+  background-color: #6b6b6b;
 }
 
 .footer__logo {
@@ -356,4 +358,16 @@ footer {
   align-items: center;
   justify-self: center;
   padding: 0;
+}
+
+@media (max-width: 1100px) {
+  footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .footer__logo {
+    justify-self: center;
+  }
 }
