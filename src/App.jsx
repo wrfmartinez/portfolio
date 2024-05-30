@@ -13,7 +13,7 @@ function App() {
   const [isHidden, setHidden] = useState(false)
 
   useEffect(() => {
-    // Trigger the animation after a short delays
+    // Trigger the animation after short delays
     const timeout = setTimeout(() => {
       setIsVisible(true)
     }, 100)
